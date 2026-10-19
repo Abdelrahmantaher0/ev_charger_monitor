@@ -1,0 +1,17 @@
+EV CHARGER MONITOR - INSTALL ON ANDROID
+
+This is a Progressive Web App (PWA), not a compiled native APK.
+You already have a GitHub Pages URL that can communicate with ESP32 over BLE.
+
+1. From this folder, upload ALL files to the ROOT of your existing public GitHub Pages repository, replacing old files.
+   Required: index.html, manifest.webmanifest, sw.js, icon-192.png, icon-512.png, icon.svg.
+2. Allow GitHub Pages a few minutes to publish.
+3. Open the HTTPS GitHub Pages site in Chrome on your Android phone.
+4. Tap Chrome's three-dot menu > Install app (or Add to Home screen).
+5. Confirm Install. An EV Charger icon appears on your home screen.
+6. Open the app from the home screen, tap Connect BLE, and select your ESP32 BleUart device.
+7. If Chrome offers only Create shortcut instead, the site may not yet be installable; check HTTPS and that all files are published.
+
+BLE needs Android Chrome support and user permission. The ESP32 does not need internet.
+An initial internet connection may be needed to load/update the app; the files are cached for later offline launches.
+Start/Stop are TEST COMMANDS until the STM32 firmware interprets them and independently validates all safety checks.
